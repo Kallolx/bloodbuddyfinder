@@ -1,8 +1,7 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
-	darkMode: ["class"],
+	darkMode: "class",
 	content: [
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
@@ -97,6 +96,10 @@ export default {
 				'pulse-soft': {
 					'0%, 100%': { opacity: '1' },
 					'50%': { opacity: '0.8' }
+				},
+				'glow': {
+					'0%, 100%': { opacity: '1', boxShadow: '0 0 15px -2px hsl(var(--primary))' },
+					'50%': { opacity: '0.7', boxShadow: '0 0 25px 0px hsl(var(--primary))' }
 				}
 			},
 			animation: {
@@ -106,11 +109,12 @@ export default {
 				'fade-out': 'fade-out 0.3s ease-out',
 				'scale-in': 'scale-in 0.2s ease-out',
 				'slide-in': 'slide-in 0.4s ease-out',
-				'pulse-soft': 'pulse-soft 2s infinite'
+				'pulse-soft': 'pulse-soft 2s infinite',
+				'glow': 'glow 3s ease-in-out infinite'
 			},
 			fontFamily: {
-				sans: ['Inter', 'sans-serif'],
-				display: ['SF Pro Display', 'Inter', 'sans-serif']
+				sans: ['DM Sans', 'Inter', 'sans-serif'],
+				display: ['DM Sans', 'Inter', 'sans-serif']
 			}
 		}
 	},

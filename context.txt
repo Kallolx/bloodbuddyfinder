@@ -1,0 +1,79 @@
+# Blood Buddy Finder - Project Context
+
+## Project Overview
+Blood Buddy Finder is a web-based platform designed to connect blood donors with people in need of blood donations in Bangladesh. The platform aims to address the critical challenge of finding appropriate blood donors quickly during medical emergencies.
+
+## Core Features
+1. **Find Blood Donors**: Users can search for blood donors based on blood type, location, and availability status.
+2. **Request Blood**: Users can submit emergency blood requests that are displayed publicly for potential donors to see.
+3. **Register as Donor**: People can register as blood donors and provide their details to be available in the donor database.
+4. **Emergency Requests Display**: The platform prominently displays current emergency blood requests to attract immediate attention.
+5. **Location-Based Matching**: Uses district-based location data to connect donors and recipients in proximity.
+
+## Problem Solved
+The application addresses several critical problems:
+- Difficulty in finding compatible blood donors during emergencies
+- Lack of a centralized platform for blood donation requests in Bangladesh
+- Limited visibility of blood donation needs to potential donors
+- Inefficient manual processes for matching donors with recipients
+
+## Technology Stack
+- **Frontend Framework**: React with TypeScript
+- **UI Components**: Shadcn UI component library
+- **Styling**: Tailwind CSS for responsive design
+- **State Management**: React Hooks and Context
+- **Routing**: React Router for navigation
+- **Form Handling**: React Hook Form with zod validation
+- **HTTP Client**: TanStack Query for data fetching
+- **Build Tool**: Vite for fast development
+
+## Data Model
+1. **Donors**:
+   - Personal information (name, contact, address)
+   - Blood type
+   - Location (district)
+   - Donation history (last donation date)
+   - Eligibility status (based on 90-day rule)
+   - Verification status
+
+2. **Blood Requests**:
+   - Patient information
+   - Blood type needed
+   - Hospital/location
+   - Urgency level (Critical, High, Medium)
+   - Contact information
+   - Additional notes
+   - Timestamp
+
+3. **Geographic Data**:
+   - Districts in Bangladesh
+   - Nearby districts for extended search
+
+## User Flow
+1. **For Blood Seekers**:
+   - Submit a blood request with details
+   - Search for donors matching their requirements
+   - Contact potential donors directly
+   - Track request status
+
+2. **For Blood Donors**:
+   - Register with personal and blood details
+   - Set availability status
+   - View emergency requests
+   - Respond to matching requests
+
+## Key Implementation Details
+- **Donor Eligibility**: Automatically calculates eligibility based on the 90-day rule between donations
+- **Verification System**: Donors can be verified for reliability
+- **Urgency Levels**: Color-coded system to highlight critical needs
+- **Responsive Design**: Mobile-friendly interface for accessibility in emergency situations
+- **Locality Focus**: Specialized for Bangladesh's geography and medical infrastructure
+- **Real-time Updates**: Emergency requests are prominently displayed in real-time
+
+## Future Development Potential
+- Integration with hospitals and blood banks
+- SMS notification system for urgent requests
+- Blood donation drive organization
+- Gamification elements to encourage regular donation
+- Analytics dashboard to track donation statistics
+- Community features for donor engagement 
