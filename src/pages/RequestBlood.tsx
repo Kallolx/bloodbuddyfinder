@@ -17,7 +17,7 @@ import {
 import { bloodGroups, districts } from '@/data/districts';
 import { Badge } from '@/components/ui/badge';
 import { Alert, AlertDescription, AlertTitle } from '@/components/ui/alert';
-import { Clock, MapPin, Heart, CheckCircle, Phone, AlertTriangle } from 'lucide-react';
+import { Clock, MapPin, Heart, CheckCircle, Phone, AlertTriangle, AlertCircle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
 
 // Emergency request data (Sample)
