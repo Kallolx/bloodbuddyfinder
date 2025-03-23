@@ -110,7 +110,7 @@ const FindDonors = () => {
                       <SelectValue placeholder="All Blood Groups" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="">All Blood Groups</SelectItem>
+                      <SelectItem value="all-groups">All Blood Groups</SelectItem>
                       {bloodGroups.map(group => (
                         <SelectItem key={group} value={group}>{group}</SelectItem>
                       ))}
@@ -128,7 +128,7 @@ const FindDonors = () => {
                       <SelectValue placeholder="All Districts" />
                     </SelectTrigger>
                     <SelectContent>
-                      <SelectItem value="">All Districts</SelectItem>
+                      <SelectItem value="all-districts">All Districts</SelectItem>
                       {districts.map(district => (
                         <SelectItem key={district} value={district}>{district}</SelectItem>
                       ))}
